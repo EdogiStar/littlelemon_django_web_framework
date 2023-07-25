@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1 class="bg-danger" style="color: rgb(73, 73, 80);">Booking Form</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <table>
+            {{ form.as_p }}
+        </table>
+        <input type="submit" value="Submit"> 
+    </form>
+{% endblock %}
