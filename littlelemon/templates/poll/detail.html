@@ -1,0 +1,24 @@
+{% extends 'poll/base.html' %}
+{% load static %}
+
+{% block content %}
+<section>
+    <article id="hero">
+      <h1 class="heading_shadow">Quick Survey</h1>
+      <p>
+        We would need a few minutes of your time for improved services
+      </p>
+    </article>
+  </section>
+  <section>
+    <article>
+        <h2>Poll</h2>
+        {% for item in choice.choice %}    
+            <p>{{ item.choice_text }}</p>
+        {% endfor %}
+      <p>
+        Question Content Here: Our menu consists of 12-15 seasonal items based on Italian, Greek, and Turkish culture.
+      </p>
+    </article>
+  </section>
+{% endblock %}

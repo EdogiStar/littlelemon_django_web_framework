@@ -1,4 +1,4 @@
-{% extends 'base.html' %} 
+{% extends 'restaurant/base.html' %} 
 {% load static %} 
 {% block content %}
 <section>
@@ -26,8 +26,8 @@
          <!--End col-->
          <!--Begin col-->
          <div class="column">
-            <img src="/restaurant/static/img/menu_items/{{menu_item.name}}.jpg" alt="{{ menu_item.name}}" />
-            <!-- /restaurant/static/img/{{menu_item.name}}.jpg -->
+            <img src="../restaurant/static/img/menu_items/{{menu_item.name}}.jpg" alt="{{ menu_item.name}}" />
+            <!-- /restaurpant/static/img/{{menu_item.name}}.jpg -->
         </div>
          <!--End col-->
       </div>
